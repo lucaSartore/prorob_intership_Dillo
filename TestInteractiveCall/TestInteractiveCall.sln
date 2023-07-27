@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInteractiveCall", "TestInteractiveCall\TestInteractiveCall.csproj", "{558F4DB6-A714-4F94-8EB9-1BDBEE3D3BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestInteractiveCall", "TestInteractiveCall\TestInteractiveCall.csproj", "{558F4DB6-A714-4F94-8EB9-1BDBEE3D3BF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{5FC8CACE-D73B-464C-898F-77A8E3F87A20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

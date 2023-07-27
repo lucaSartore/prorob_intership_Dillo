@@ -1,32 +1,21 @@
 ﻿// libraries needed:
 // dotnet add package Dillo.Voice
 // dotnet add package RestSharp
-
-
+// dotnet add package Dillo.Voice --version 1.9.0
 using Dillo.Voice.Dto;
 using Dillo.Voice;
 using RestSharp;
-using RestSharp.Authenticators;
 using Dillo.Voice.Extensions;
-using System.Text.Json;
-using System.Runtime.InteropServices;
 using Dillo.Voice.Models.Outbound;
-using Dillo.Voice.Builders;
-using Dillo.Voice.Constants.Say;
-using System.Threading;
-using Dillo.Voice.Constants.Transcribe;
-using Dillo.Voice.Models;
-using Dillo.Voice.Models.Actions;
-using static System.Net.Mime.MediaTypeNames;
-using System.Reflection.Emit;
-using System.ComponentModel;
-using System.IO;
 using System.Text;
-using Dillo.Voice.Constants.SendAction;
+
+using issues_collection;
+
 
 const string API_KEY = "B14604DA5FA87D1BD5ABBF193F68948746673C16356328F7C7928E05A9AF2D4A";
 const string CUSTOMER_CODE = "783ec624-8136-4dc5-864a-0fbeb9b0a925";
 
+throw new Exception();
 
 //setup the API key.
 DilloVoiceClient.Init(CUSTOMER_CODE, API_KEY);
