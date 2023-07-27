@@ -1,0 +1,71 @@
+{
+	"Sender": "+393391003110",
+	"TelephoneNumber": "+393703188051",
+	"Record": false,
+	"Transcribe": false,
+	"ChannelBehavior": {
+		"ChannelBehaviorNodes": {
+			"0": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "Hello, for Sales, press 1. For Technical Support, press 2. To speak with an operator, press 3.",
+					"LanguageCode": "en-US",
+					"VoiceId": "Matthew"
+				},
+				"NextNode": 1
+			},
+			"1": {
+				"ActionType": "Menu",
+				"ChannelBehaviorAction": {
+					"Digits": {
+						"1": {
+							"NextNode": 2
+						},
+						"2": {
+							"NextNode": 3
+						},
+						"NoDigit": {
+							"NextNode": 0
+						},
+						"WrongDigit": {
+							"NextNode": 0
+						}
+					},
+					"Timeout": 10,
+					"RecordMaxLength": 2,
+					"PlayBeep": false,
+					"VoicesExactMatch": true,
+					"Transcribe": false
+				}
+			},
+			"2": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "You pressed 1 and chose Sales.",
+					"LanguageCode": "en-US",
+					"VoiceId": "Matthew"
+				}
+			},
+			"3": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "You pressed 2 and chose Technical Support.",
+					"LanguageCode": "en-US",
+					"VoiceId": "Matthew"
+				}
+			},
+			"4": {
+				"ActionType": "Collect",
+				"ChannelBehaviorAction": {
+					"Timeout": 30,
+					"NumberOfDigits": 4,
+					"FinishOnKey": "#",
+					"PlayBeep": true,
+					"CallbackPlayMusicOnHold": false
+				}
+			}
+		}
+	},
+	"AnonymizeInHours": 1.5,
+	"Priority": 1
+}

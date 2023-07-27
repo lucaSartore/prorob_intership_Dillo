@@ -20,3 +20,25 @@ C:\Users\lucas\Desktop\prorob intership\prorob_intership_Dillo\TestInteractiveCa
 C:\Users\lucas\Desktop\prorob intership\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\ref\TestInteractiveCall.dll
 C:\Users\lucas\Desktop\prorob intership\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\Dillo.Voice.dll
 C:\Users\lucas\Desktop\prorob intership\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\TestInteractiveCall.exe
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\TestInteractiveCall.deps.json
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\TestInteractiveCall.runtimeconfig.json
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\TestInteractiveCall.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\TestInteractiveCall.pdb
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\Dillo.Voice.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\RestSharp.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.csproj.AssemblyReference.cache
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.AssemblyInfoInputs.cache
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.AssemblyInfo.cs
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.csproj.CoreCompileInputs.cache
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.csproj.CopyComplete
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\refint\TestInteractiveCall.dll
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.pdb
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\TestInteractiveCall.genruntimeconfig.cache
+C:\Users\luca.sartore\Desktop\repos\prorob_intership_Dillo\TestInteractiveCall\TestInteractiveCall\obj\Debug\net6.0\ref\TestInteractiveCall.dll

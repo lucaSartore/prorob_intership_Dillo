@@ -1,0 +1,73 @@
+{
+	"Sender": "+393391003110",
+	"TelephoneNumber": "+393703188051",
+	"Record": false,
+	"Transcribe": false,
+	"ChannelBehavior": {
+		"ChannelBehaviorNodes": {
+			"0": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "Premi 0 per inserire il codice di errore. 1 per conoscere i codici di errore disponibili",
+					"LanguageCode": "it-IT",
+					"VoiceId": "Bianca"
+				},
+				"NextNode": 1
+			},
+			"1": {
+				"ActionType": "Menu",
+				"ChannelBehaviorAction": {
+					"Digits": {
+						"0": {
+							"NextNode": 3
+						},
+						"1": {
+							"NextNode": 2
+						},
+						"NoDigit": {
+							"NextNode": 0
+						},
+						"WrongDigit": {
+							"NextNode": 0
+						}
+					},
+					"Timeout": 10,
+					"RecordMaxLength": 2,
+					"PlayBeep": false,
+					"VoicesExactMatch": true,
+					"Transcribe": false
+				}
+			},
+			"2": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "Il codice per Pausa è 1. il codice per Manutenzione è 2. il codice per Lavaggio è 3",
+					"LanguageCode": "it-IT",
+					"VoiceId": "Bianca"
+				},
+				"NextNode": 0
+			},
+			"3": {
+				"ActionType": "Say",
+				"ChannelBehaviorAction": {
+					"Text": "Inserisci il codice di errore dopo il bip, poi premi cancelletto",
+					"LanguageCode": "it-IT",
+					"VoiceId": "Bianca"
+				},
+				"NextNode": 4
+			},
+			"4": {
+				"ActionType": "Collect",
+				"ChannelBehaviorAction": {
+					"Timeout": 30,
+					"NumberOfDigits": 4,
+					"FinishOnKey": "#",
+					"PlayBeep": true,
+					"CallbackPlayMusicOnHold": false
+				}
+			}
+		}
+	},
+	"AnonymizeInHours": 1.5,
+	"Priority": 1
+}
