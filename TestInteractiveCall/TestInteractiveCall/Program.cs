@@ -1,50 +1,40 @@
-﻿// libraries needed:
-// dotnet add package Dillo.Voice
-// dotnet add package RestSharp
-// dotnet add package Dillo.Voice --version 1.9.0
-using Dillo.Voice.Dto;
-using Dillo.Voice;
-using RestSharp;
-using Dillo.Voice.Extensions;
-using Dillo.Voice.Models.Outbound;
-using System.Text;
-
-using issues_collection;
+﻿using issues_collection;
+using System.ComponentModel;
 
 
-const string API_KEY = "B14604DA5FA87D1BD5ABBF193F68948746673C16356328F7C7928E05A9AF2D4A";
-const string CUSTOMER_CODE = "783ec624-8136-4dc5-864a-0fbeb9b0a925";
+// when you have an enum for errors (declared below)
+// to send the declaration to the user you have to
 
-throw new Exception();
-
-//setup the API key.
-DilloVoiceClient.Init(CUSTOMER_CODE, API_KEY);
-
-// open the message that has to be sent
-string MessagePayload= File.ReadAllText("..\\..\\..\\Request_issue_call.json", Encoding.UTF8);
-
-// create the request
-OutboundVoiceRequest outboundVoiceRequest = new OutboundVoiceRequest
-{
-    SendActionType = "Voice",
-    MessagePayload = MessagePayload
-};
+// create an istance of an IssueCOllector with your enum as a generic type
+IssueCollector<MyErrors> collector = new IssueCollector<MyErrors>();
 
 // send the request
-OutboundVoicePostResponse postResponse = await outboundVoiceRequest.SendAsync();
+collector.SendRequest();
 
-// wait unitill the call has finishd
-OutboundVoiceGetResponse getResponse = await postResponse.GetAsync();
-while (getResponse.Result.Status.PrimaryStatus.Code != 200){
-    getResponse = await postResponse.GetAsync();
-    Thread.Sleep(1000);
-}
+// and get the request back (as an async task)
+Task<MyErrors> error = collector.GetCode();
 
-foreach (CollectedDigits digit in getResponse.Result.CollectedDigits)
+Console.WriteLine("waiting for the responce...");
+
+Console.WriteLine("The error is: " + await error);
+
+// WARNING:
+// many things can go wrong douring this process:
+//  - the http request fails
+//  - the user dose not reply
+//  - the user insert an invalid code
+//  - ...
+//
+// so be carefull to catch all the possible errors!
+
+public enum MyErrors
 {
-    if (digit.IsSuccess == true && digit.Node == 4)
-    {
-        Console.WriteLine(digit.Digits);
-    }
+    Errore = 0,
+    Attrezzagio = 1,
+    Lavaggio = 4,
+    Pausa = 50,
+    // if one of the states is made up of multiples words is raccomended to use a description
+    // remember to include: System.ComponentModel;
+    [Description("Incastro Macchina")]
+    IncastroMacchina
 }
-
